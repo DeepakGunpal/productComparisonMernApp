@@ -37,7 +37,8 @@ const AddProduct = () => {
 
     return (
         <div style={{ fontSize: 'large' }}>
-            <p> 1.) Product Name should be unique.</p>
+            <h5> 1.) Add New Product.</h5>
+            <p> 2.) Product Name should be unique.</p>
             <hr />
             <div style={{
                 display: 'grid',
@@ -126,7 +127,7 @@ const AddProduct = () => {
                         backgroundColor: 'black',
                         margin: '0 0 0 5%',
                     }}
-                    onClick={handleAdd}>Add</Button>
+                    onClick={handleAdd}>Add Product</Button>
             </div>
         </div>
     )

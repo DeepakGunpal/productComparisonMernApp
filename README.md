@@ -10,14 +10,14 @@ This comparison page needs to show name, price, and ratings in a table for the 2
 
 Kindly fill in the blanks to complete the outline of a comparison page code. Feel free to rewrite sentences to discuss your approach if you are uncomfortable with Redux.
 
-a) You will use ____________ hook that returns the current state, say products, and the function ____________ that updates the state.
+a) You will use ____useState________ hook that returns the current state, say products, and the function ___setState_________ that updates the state.
 
-b) You will use ___________ hook to make an API call and post the following payload: __________ .
+b) You will use ___useEffect________ hook to make an API call and post the following payload: ____productName______ .
 
-c) API will use the above payload and get data in **one** query: ___________. (Note: Provide the actual Mongo/Mongoose query you'd use.)
+c) API will use the above payload and get data in **one** query: ___findOne________. (Note: Provide the actual Mongo/Mongoose query you'd use.)
 
-d) API will return the following JSON data: ___________.
+d) API will return the following JSON data: ___product name price and ratings________.
 
-e) _________ hook will receive this data from API and will use the function __________ to update state and re-render the component.
+e) __useState_______ hook will receive this data from API and will use the function ____setState______ to update state and re-render the component.
 
-f) How well can you speak and understand Hindi? _____________
+f) How well can you speak and understand Hindi? _native speaker___________

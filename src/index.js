@@ -8,12 +8,7 @@ const PORT = process.env.PORT || 8080;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/api', route);
-
-app.get('/', async (req, res) => {
-    res.status(200).send("Hello, I am DeepakGunpal");
-})
-
-app.use(express.static("client/build"));
+app.use(express.static("../client/build"));
 
 app.get("*", (req, res) => {
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));

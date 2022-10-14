@@ -1,0 +1,46 @@
+.comparison_table{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: rgb(205, 198, 198);
+    font-size: larger;
+    height: 30rem;
+    border-radius: 20px;
+}
+
+p{
+    font-size: large;
+    font-weight: bold;
+}
+
+.product_container{
+    border: 1px solid black;
+    padding: 5px;
+    margin: 25px;
+    background-color: rgb(184, 173, 173);
+}
+
+.App > h1{
+    text-align: center;
+    color: white;
+}
+
+.rating_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.table_container{
+    width: fit-content;
+    font-size: larger;
+}
+
+.App{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(8, 8, 7);
+}

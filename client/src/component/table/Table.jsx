@@ -42,7 +42,7 @@ export default function BasicTable() {
 
     return (
         <TableContainer component={Paper}>
-            <Table sx={{ minWidth: 650 }} aria-label="simple table">
+            <Table sx={{ minWidth: 220 }} aria-label="simple table">
                 <TableHead>
                     <TableRow>
                         <TableCell></TableCell>
@@ -55,7 +55,7 @@ export default function BasicTable() {
                     <TableRow
                         sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                     >
-                        <TableCell component="th" scope="row">
+                        <TableCell component="th" scope="col">
                             <p>Name</p>
                         </TableCell>
                         <TableCell align="center"><p>{product1.name}</p></TableCell>

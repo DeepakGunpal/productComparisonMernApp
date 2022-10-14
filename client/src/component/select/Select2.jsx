@@ -14,6 +14,7 @@ export default function BasicSelect({ setProduct2Name }) {
 
     const getProduct = async () => {
         const productData = await axiosInstance.get('/getAllProduct');
+        console.log(productData.data.data)
         setList(productData.data.data);
     }
 
@@ -25,7 +26,7 @@ export default function BasicSelect({ setProduct2Name }) {
         setProduct2Name(event.target.value);
         setProduct(event.target.value);
     };
-
+    console.log(list)
     return (
         <Box sx={{ minWidth: 120 }}>
             <FormControl fullWidth>

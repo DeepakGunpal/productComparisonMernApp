@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const route = require('./route/route');
+const route = require('./src/route/route');
 require('dotenv/config');
 const app = express();
 const PORT = process.env.PORT || 8080;
@@ -8,13 +8,14 @@ const PORT = process.env.PORT || 8080;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/api', route);
-app.use(express.static("../client/build"));
-
+app.use(express.static("client/build"));
+console.log(__dirname)
 app.get("*", (req, res) => {
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
 })
 
+app.listen(PORT, () => console.log('listening on port ' + PORT))
 mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true })
-    .then(() => app.listen(PORT, () => console.log('listening on port ' + PORT)))
+    .then(() => console.log('connected to DB '))
     .catch((error) => console.log('error: ' + error.message));
 

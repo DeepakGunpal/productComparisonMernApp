@@ -12,6 +12,15 @@ const createProduct = async (req, res) => {
     }
 }
 
+// const getProduct = async (req, res) => {
+//     try {
+//         const product = await productModel.find({ name: { $in: [req.query.p1, req.query.p2] } }).select('_id name price ratings');
+//         res.status(200).send({ status: true, data: product });
+//     } catch (error) {
+//         res.status(400).send({ status: false, message: error.message });
+//     }
+// }
+
 const getProduct = async (req, res) => {
     try {
         const product = await productModel.findOne({ name: req.params.productName }).select('_id name price ratings');

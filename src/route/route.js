@@ -3,7 +3,7 @@ const { createProduct, getProduct, getAllProduct } = require('../controller/cont
 const route = express.Router();
 
 route.post('/createProduct', createProduct);
-route.get('/getProduct/:productName', getProduct);
+route.get('/compare', getProduct);
 route.get('/getAllProduct', getAllProduct);
 
 module.exports = route;

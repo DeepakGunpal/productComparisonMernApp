@@ -3,7 +3,7 @@ const { createProduct, getProducts, getAllProduct, getProduct } = require('../co
 const route = express.Router();
 
 route.post('/createProduct', createProduct);
-route.get('/getProduct', getProduct);
+route.get('/getProduct/:productName', getProduct);
 route.get('/compare', getProducts);
 route.get('/getAllProduct', getAllProduct);
 

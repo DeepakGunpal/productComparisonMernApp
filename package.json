@@ -2,7 +2,7 @@
   "name": "productcomparisonmernapp",
   "version": "1.0.0",
   "description": "Test\r Imagine, a MERN-based comparison page that lets you compare 2 products. The page URL may look something like this:\r  https://.../compare?productIds[]=p1001&productIds[]=p22\r This comparison page needs to show name, price, and ratings in a table for the 2 productIds in the URL. Mongo products table has fields {_id, name, price, ratings}.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
